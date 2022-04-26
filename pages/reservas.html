@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300family=Roboto&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon/dogheart.ico">
+    <!-- animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Keywords + Description -->
+    <meta name="description" content="Página de reservas del hotel para mascotas Lo de Laisa">
+    <meta name="keywords" content="HOTEL MASCOTAS, BUENOS AIRES, MASCOTAS, PERROS, GATOS, RESERVA">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Reservas | Lo de Laisa</title>
+</head>
+
+<body>
+    <!--------------------- HEADER ----------------------->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #863303;">
+            <div class="container-fluid">
+             
+              <h1 class="animate__animated animate__slideInLeft"><a class="navbar-brand" href="../index.html">Lo de Laisa</a></h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/reservas.html">Reservas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+            </div> 
+            </div>
+          </nav>
+    </header>
+    <!------------------ MAIN SECTIONS ------------------->
+    <main class="main__reservas">
+      <h2 class="fw-bold">Reserva de servicios.</h2>
+      <section class="form-reservas">
+        <h3>Seleccione fechas:</h3>
+        <form>
+        <div class="fecha entrada">
+            <label for="fecha entrada" class="mx-2 col-form-label">Entrada</label>
+            <input class="form-control" type="date" name="fecha entrada">
+        </div>
+        <div class="fecha salida">
+            <label class="mx-2 col-form-label" for="fecha salida">Salida</label>
+            <input class="form-control" type="date" name="fecha salida">
+        </div>
+        
+        <h3>Cantidad de mascotas:</h3>
+        <div class="cant-mascotas">
+            <label for="cantidad-mascotas" class="mx-2 col-form-label"></label>
+            <input class="form-control" type="text" name="cantidad-mascotas" placeholder="1 mascota">
+        </div>
+        
+        <h3>Seleccione el servicio:</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Peluqueria (Baño)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Peluqueria (Baño y corte de pelo)
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Paseo 
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Festejos
+          </label>
+        </div>
+        <div class="send">
+            <input type="submit" value="Reservar">
+        </div>
+        </form>
+    </section>
+    </main>
+    <!--------------------- FOOTER ----------------------->
+    <footer class="pie">
+      <div class="dato-foot">
+          <h4>(011)1234-4321</h4>
+          <h4>Arias 3361,Buenos Aires,Argentina.</h4>
+          </div >
+          <div class="img-foot">
+            <a href="https://www.instagram.com/" target="_blank" >
+              <i class="bi bi-instagram mx-1"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" >
+              <i class="bi bi-facebook mx-1"></i>
+            </a>
+          </div>
+          <h5>Copyright Lo de Laisa - 2022. Todos los derechos reservados.</h5>
+  </footer>
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,332 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.send {
+  text-align: center;
+  color: #f7ebb5;
+  margin: 1rem; }
+  .send input {
+    border: solid #863303 0.2rem;
+    border-radius: 2rem;
+    padding: 0.2rem 2rem;
+    background-color: #863303;
+    color: #f7ebb5; }
+  .send input:hover {
+    border: solid #863303 0.1rem;
+    background-color: #f7ebb5;
+    color: #863303;
+    transform: scale(1.2); }
+
+body {
+  background-color: #f7ebb5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem; }
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem; }
+
+h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem; }
+
+.navbar {
+  color: #f7ebb5; }
+
+main {
+  padding-top: 5rem; }
+
+/* FOOTER */
+.pie {
+  padding: 1.5rem 1.5rem;
+  width: 100;
+  border-top: solid #863303;
+  text-align: baseline;
+  position: bottom;
+  color: #863303;
+  background-color: whitesmoke;
+  font-size: 1rem;
+ }
+
+.dato-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline;
+  gap: 2rem; }
+
+.img-foot {
+  justify-content: center; }
+  .img-foot a {
+    color: #863303;
+    text-decoration: none;
+    font-size: 1.6rem;
+    gap: 2rem;
+    justify-content: center; }
+
+.bi-instagram {
+  text-align: center; }
+
+.bi-facebook {
+  text-align: center; }
+
+footer h5 {
+  margin-bottom: 1rem;
+  text-align: left; }
+
+/************ PAGINA INICIO ***********************/
+.grid-index {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  grid-template-areas: "grid-index__sect1 grid-index__sect1 grid-index__sect1 grid-index__sect1 "
+ "grid-index__sect2 grid-index__sect2 grid-index__sect2 grid-index__sect2"
+ "grid-index__sect3 grid-index__sect3 grid-index__sect3 grid-index__sect3"; }
+
+.grid-index__sect1 {
+  grid-area: grid-index__sect1;
+  color: #863303;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+  .grid-index__sect1 a {
+    text-decoration: none;
+    color: #863303c0;
+    background-color: #8633033b;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.3rem;
+    border-radius: 2rem; }
+    .grid-index__sect1 a:hover {
+      text-decoration: underline;
+      color: #863303;
+      border: #863303 solid 1px; }
+  .grid-index__sect1 h2 {
+    padding: 1rem; }
+  .grid-index__sect1 p {
+    margin-bottom: 1rem; }
+
+/* **************sección servicios**************** */
+.grid-index__sect2 {
+  color: #863303;
+  grid-area: grid-index__sect2;
+  width: 90%;
+  text-align: center;
+  padding: 2 rem;
+  margin: 1rem; }
+
+.grid-index__galeria {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.grid-index__sect2 img {
+  display: flex;
+  height: 40vh;
+  width: auto;
+  border-radius: 5%;
+  margin: 1rem; }
+
+.grid-index__sect2 p {
+  padding: 1rem; }
+
+/* **************sección mail**************** */
+.grid-index__sect3 {
+  color: #f7ebb5;
+  background-color: #863303;
+  border-radius: 3rem;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  grid-area: grid-index__sect3; }
+
+#emailinicio input {
+  outline: unset;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem;
+  padding: 0.2rem 2rem;
+  margin-bottom: 0.5rem; }
+
+/****boton enviar****/
+.enviar {
+  margin: 1rem; }
+
+.enviar input {
+  border: solid #f7ebb5 0.1rem;
+  border-radius: 2rem;
+  padding: 0.2rem 2rem;
+  background-color: #f7ebb5;
+  color: #863303;
+  text-align: center; }
+
+.enviar input:hover {
+  border: solid #f7ebb5 0.1rem;
+  color: #f7ebb5;
+  background-color: #863303;
+  transform: scale(1.2); }
+
+/* *************************************************************************************************************
+PAGINA NOSOTROS
+*************************************************************************************************************** */
+#textnosotros {
+  justify-content: center; }
+
+.grid-nosotros {
+  color: #863303;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  justify-content: center;
+  grid-template-areas: "grid-nosotros__sect2 grid-nosotros__sect2 grid-nosotros__sect2 grid-nosotros__sect2"
+ ". grid-nosotros__sect3 grid-nosotros__sect3 ."; }
+
+/* nosotros seccion 2 */
+.grid-nosotros__sect2 {
+  grid-area: grid-nosotros__sect2;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .grid-nosotros__sect2 h2 {
+    margin: 1rem; }
+  .grid-nosotros__sect2 h3 {
+    margin: 1rem; }
+
+/* nosotros seccion 3 */
+.grid-nosotros__sect3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  grid-area: grid-nosotros__sect3; }
+
+#mapa {
+  margin-top: 1rem;
+  height: 70vh;
+  width: 95%; }
+
+/* *************************************************************************************************************
+PAGINA SERVICIOS
+*************************************************************************************************************** */
+.servicios__main {
+  text-align: center;
+  color: #863303;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+#servh2 {
+  text-align: center;
+  color: #863303; }
+
+/* *************************************************************************************************************
+PAGINA RESERVAS
+*************************************************************************************************************** */
+.main__reservas h2 {
+  text-align: center;
+  color: #863303; }
+
+.form-reservas {
+  text-align: center;
+  color: #863303;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60% auto;
+  height: 90vh;
+  background-color: #f7ebb5;
+  padding-left: 2rem; }
+  .form-reservas .form-reservas h3 {
+    color: #863303;
+    margin: 0.5rem 0rem;
+    text-align: start; }
+
+.fecha {
+  text-align: left;
+  color: #863303;
+  padding: 0.2rem; }
+
+.entrada input {
+  outline: unset;
+  padding: 0.2rem;
+  margin: 0.5rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+.salida input {
+  outline: unset;
+  padding: 0.2rem;
+  margin-left: 1rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+.cant-mascotas input {
+  outline: unset;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+/* *************************************************************************************************************
+PAGINA CONTACTO
+*************************************************************************************************************** */
+.form-c {
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  color: #863303;
+  text-align: center;
+  margin-bottom: 2rem; }
+  .form-c .form-c h2 {
+    margin-bottom: 5rem; }
+
+.form-contacto {
+  margin-top: 2rem; }
+
+#nombrecontacto input {
+  outline: unset;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 13rem;
+  margin: 0.5rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+#telefonocontacto input {
+  outline: unset;
+  padding: 0.2rem;
+  padding-right: 13rem;
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+#emailcontacto input {
+  outline: unset;
+  padding: 0.2rem;
+  padding-right: 13rem;
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+  color: #1f1f1f;
+  border: solid #863303 0.2rem;
+  border-radius: 2rem; }
+
+textarea {
+  border-radius: 2rem;
+  border: #863303 solid;
+  padding: 0.5rem;
+  margin: 0.5rem; }
